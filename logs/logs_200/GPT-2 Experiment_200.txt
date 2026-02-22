@@ -1,0 +1,74 @@
+Experiment: GPT-2 Experiment
+Timestamp: 20260126_141222
+
+============================================================
+MODEL
+============================================================
+
+Model name: gpt2
+Tokenizer vocab size: 50257
+Pad token: <|endoftext|>
+EOS token: <|endoftext|>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 180
+Test size: 20
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='gpt2', revision=None, inference_mode=False, r=8, target_modules={'c_attn'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=True, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 294,912
+Total parameters: 124,734,720
+Trainable %: 0.2364%
+
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation is the process of converting a file into a binary file. Interpretation is the process of converting a file into a binary file.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: It is a type system that allows polymorphism to be implemented in a single function.
+
+============================================================
+
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: Design a URL shortening service like bit.ly.
+A: URL shortening services are designed to reduce the number of requests and reduce the time it takes to process requests.
+----------------------------------------
+Q: Discuss the role of a package manager like npm or pip.
+A: Package managers are tools that automate the development of packages. They are often used to automate development tasks such as packaging, packaging, and packaging-related tasks.
+----------------------------------------
+Q: Explain the use of hooks in React.
+A: Hooks are a way to provide a way to interact with components, and to provide a way to interact with components without having to worry about the DOM.
+----------------------------------------
+Q: Explain the concept of responsive web design.
+A: Responsive web design is a way to make websites responsive and responsive on mobile devices.
+----------------------------------------
+Q: What is database denormalization, and when is it appropriate?
+A: Database denormalization is the process of storing data in a database, storing it in a database, and storing it in a database. Database denormalization is a process of storing data in a database, storing it in a database, and storing it in a database.
+----------------------------------------
+
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.0339
+ROUGE-L: 0.1669
+BERTScore F1: 0.8803

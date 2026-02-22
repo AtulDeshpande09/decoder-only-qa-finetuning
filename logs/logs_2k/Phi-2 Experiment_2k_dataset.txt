@@ -1,0 +1,72 @@
+Experiment: Phi-2 Experiment
+Timestamp: 20260221_114440
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: microsoft/phi-2
+Tokenizer vocab size: 50257
+Pad token: <|endoftext|>
+EOS token: <|endoftext|>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 2075
+Test size: 231
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='microsoft/phi-2', revision=None, inference_mode=False, r=8, target_modules={'q_proj', 'v_proj', 'dense', 'k_proj'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 5,242,880
+Total parameters: 2,784,926,720
+Trainable %: 0.1883%
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation translates code into machine language before execution; interpretation translates code line by line during execution.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling flexible and generic code.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: How does eBPF enhance security observability?
+A: eBPF allows tracing and logging of network traffic, application calls, and process state, enabling detailed security analysis.
+----------------------------------------
+Q: Explain the Read Committed isolation level.
+A: Read Committed guarantees that reads are committed before writes, preventing concurrent writes from corrupting read data.
+----------------------------------------
+Q: Explain the concept of security control resilience testing scenarios.
+A: Resilience testing simulates real-world attacks or failures to evaluate controls' ability to recover, adapt, and maintain security posture.
+----------------------------------------
+Q: Explain the concept of security posture assessment.
+A: Posture assessment evaluates an organization's security controls, configurations, and compliance status to identify gaps and prioritize remediation efforts.
+----------------------------------------
+Q: Explain the concept of threat intelligence.
+A: Threat intelligence is information about known or suspected threats, enabling proactive defense and mitigation.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1215
+ROUGE-L: 0.3320
+BERTScore F1: 0.9109
