@@ -1,0 +1,72 @@
+Experiment: Mistral Experiment
+Timestamp: 20260126_151514
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: mistralai/Mistral-7B-v0.1
+Tokenizer vocab size: 32000
+Pad token: </s>
+EOS token: </s>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 180
+Test size: 20
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path=None, revision=None, inference_mode=False, r=8, target_modules={'q_proj', 'v_proj', 'k_proj', 'o_proj'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 6,815,744
+Total parameters: 7,248,547,840
+Trainable %: 0.0940%
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation translates source code into machine code, producing an executable file. Interpretation executes code line by line, translating at runtime.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: Polymorphism allows objects of different classes to be treated as objects of a common base class, enabling method overriding and dynamic behavior.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: Design a URL shortening service like bit.ly.
+A: Implement using a database for URL mapping, ensuring efficient storage and retrieval.
+----------------------------------------
+Q: Discuss the role of a package manager like npm or pip.
+A: Package managers simplify dependency management, automate installation, and ensure consistent versions across projects.
+----------------------------------------
+Q: Explain the use of hooks in React.
+A: Hooks are functions that let you "hook into" React state and lifecycle features from function components.
+----------------------------------------
+Q: Explain the concept of responsive web design.
+A: Responsive web design adapts a website's layout and content to different screen sizes, ensuring optimal viewing across devices.
+----------------------------------------
+Q: What is database denormalization, and when is it appropriate?
+A: Denormalization involves storing redundant data for faster retrieval, appropriate for read-heavy applications with limited write operations.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1372
+ROUGE-L: 0.3853
+BERTScore F1: 0.9228

@@ -1,0 +1,72 @@
+Experiment: LLaMA-2 7B Experiment
+Timestamp: 20260126_200452
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: meta-llama/Llama-2-7b-hf
+Tokenizer vocab size: 32000
+Pad token: </s>
+EOS token: </s>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 180
+Test size: 20
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='meta-llama/Llama-2-7b-hf', revision=None, inference_mode=False, r=8, target_modules={'o_proj', 'q_proj', 'k_proj', 'v_proj'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 8,388,608
+Total parameters: 6,746,804,224
+Trainable %: 0.1243%
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A:  Compilation produces executable code, while interpretation runs code at runtime.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A:  Polymorphism is the ability of an object to take on different forms (polymorphic behavior) in different contexts, implementing a single interface.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: Design a URL shortening service like bit.ly.
+A: Use URL shorteners, handle redirects, and optimize for performance.
+----------------------------------------
+Q: Discuss the role of a package manager like npm or pip.
+A: A package manager automates the installation and management of dependencies, ensuring consistent versions and easy updates.
+----------------------------------------
+Q: Explain the use of hooks in React.
+A: Hooks are functions that allow state and other React features to be used in functional components.
+----------------------------------------
+Q: Explain the concept of responsive web design.
+A: Responsive web design adapts to different screen sizes, ensuring a consistent user experience across devices.
+----------------------------------------
+Q: What is database denormalization, and when is it appropriate?
+A: Denormalization reduces redundant data, improves query performance, and reduces network traffic, but may increase storage requirements and complexity.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1094
+ROUGE-L: 0.3232
+BERTScore F1: 0.9131
