@@ -1,0 +1,73 @@
+Experiment: Phi-2 Experiment
+Timestamp: 20260223_132712
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: microsoft/phi-2
+Tokenizer vocab size: 50257
+Pad token: <|endoftext|>
+EOS token: <|endoftext|>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 900
+Test size: 100
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='microsoft/phi-2', revision=None, inference_mode=False, r=8, target_modules={'q_proj', 'k_proj', 'v_proj', 'dense'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 5,242,880
+Total parameters: 2,784,926,720
+Trainable %: 0.1883%
+
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation translates code into machine code at compile time; interpretation translates code line by line at runtime.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling flexible and reusable code.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: How does ERC-721 differ from ERC-1155?
+A: ERC-721 is for non-fungible tokens (NFTs) and allows for ownership and transfer of unique digital assets. ERC-1155 is for fungible tokens and enables standard smart contract functionality.
+----------------------------------------
+Q: What is a merge conflict, and how do you resolve it in Git?
+A: A merge conflict occurs when two branches have conflicting changes. Resolve it by manually editing the conflicting files or using Git's merge command with options like --no-ff or --no-ff-first.
+----------------------------------------
+Q: What is Confidential Computing?
+A: Confidential Computing ensures that data remains private during processing, even if the system is compromised.
+----------------------------------------
+Q: What is Hierarchical Clustering?
+A: Hierarchical Clustering builds a hierarchy of clusters by merging or splitting them successively.
+----------------------------------------
+Q: Describe the function of a Comparator.
+A: Comparators are used to specify the order of elements in a collection, such as sorting by name or age.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1431
+ROUGE-L: 0.3396
+BERTScore F1: 0.9125
