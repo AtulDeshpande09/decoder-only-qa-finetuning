@@ -1,0 +1,70 @@
+Experiment: GPT-2 Experiment
+Timestamp: 20260223_135232
+
+============================================================
+MODEL
+============================================================
+
+Model name: gpt2
+Tokenizer vocab size: 50257
+Pad token: <|endoftext|>
+EOS token: <|endoftext|>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 900
+Test size: 100
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='gpt2', revision=None, inference_mode=False, r=8, target_modules={'c_attn'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=True, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 294,912
+Total parameters: 124,734,720
+Trainable %: 0.2364%
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation computes the code, while interpretation interprets it.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: A polymorphism is a set of values that are assigned to a variable, and assigned to a variable when the variable is changed.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: How does ERC-721 differ from ERC-1155?
+A: ERC-721 uses a new algorithm to generate new tokens, while ERC-1155 uses a new algorithm to generate new tokens.
+----------------------------------------
+Q: What is a merge conflict, and how do you resolve it in Git?
+A: A merge conflict is a conflict between two files, resulting in a single file being merged.
+----------------------------------------
+Q: What is Confidential Computing?
+A: Confidential computing is the ability to store and retrieve data securely, without requiring any third party to provide access.
+----------------------------------------
+Q: What is Hierarchical Clustering?
+A: Hierarchical clustering is a clustering algorithm that combines multiple data sets into a single data set.
+----------------------------------------
+Q: Describe the function of a Comparator.
+A: Comparators are iterators that iterate over a list of elements, returning a value.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.0274
+ROUGE-L: 0.1752
+BERTScore F1: 0.8829

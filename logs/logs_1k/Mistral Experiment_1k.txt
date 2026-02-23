@@ -1,0 +1,73 @@
+Experiment: Mistral Experiment
+Timestamp: 20260223_123214
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: mistralai/Mistral-7B-v0.1
+Tokenizer vocab size: 32000
+Pad token: </s>
+EOS token: </s>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 900
+Test size: 100
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path=None, revision=None, inference_mode=False, r=8, target_modules={'o_proj', 'q_proj', 'k_proj', 'v_proj'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 6,815,744
+Total parameters: 7,248,547,840
+Trainable %: 0.0940%
+
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A: Compilation converts source code to machine code once for execution; interpretation reads and executes source code line by line at runtime.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A: Polymorphism allows different objects of the same class to respond differently to the same method call.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: How does ERC-721 differ from ERC-1155?
+A: ERC-721 is for unique non-fungible tokens; ERC-1155 is for both fungible and non-fungible tokens, allowing batch transfers.
+----------------------------------------
+Q: What is a merge conflict, and how do you resolve it in Git?
+A: A merge conflict occurs when Git cannot automatically merge two branches due to conflicting changes. Resolve manually by reviewing and editing the conflicting files.
+----------------------------------------
+Q: What is Confidential Computing?
+A: Confidential Computing protects data in use by executing computations in isolated, encrypted environments.
+----------------------------------------
+Q: What is Hierarchical Clustering?
+A: A clustering method that groups data into a hierarchical structure, where each level represents a different level of aggregation.
+----------------------------------------
+Q: Describe the function of a Comparator.
+A: A comparator is a digital circuit that compares two input voltages and outputs a logic level indicating which is higher.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1700
+ROUGE-L: 0.3904
+BERTScore F1: 0.9196

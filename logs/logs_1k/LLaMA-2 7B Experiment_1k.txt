@@ -1,0 +1,73 @@
+Experiment: LLaMA-2 7B Experiment
+Timestamp: 20260223_120551
+============================================================
+
+
+============================================================
+MODEL
+============================================================
+
+Model name: meta-llama/Llama-2-7b-hf
+Tokenizer vocab size: 32000
+Pad token: </s>
+EOS token: </s>
+
+============================================================
+DATASET STATS
+============================================================
+
+Train size: 900
+Test size: 100
+
+============================================================
+LORA CONFIGURATION
+============================================================
+
+LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, peft_version='0.18.1', base_model_name_or_path='meta-llama/Llama-2-7b-hf', revision=None, inference_mode=False, r=8, target_modules={'v_proj', 'o_proj', 'k_proj', 'q_proj'}, exclude_modules=None, lora_alpha=16, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', trainable_token_indices=None, loftq_config={}, eva_config=None, corda_config=None, use_dora=False, alora_invocation_tokens=None, use_qalora=False, qalora_group_size=16, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, target_parameters=None, arrow_config=None, ensure_weight_tying=False)
+Trainable parameters: 8,388,608
+Total parameters: 6,746,804,224
+Trainable %: 0.1243%
+
+
+============================================================
+SAMPLE GENERATIONS
+============================================================
+
+Q: What is the difference between compilation and interpretation?
+OUTPUT:
+Q: What is the difference between compilation and interpretation?
+A:  Compilation converts code to machine code for fast execution. Interpretation executes code directly without compiling, often used for scripting languages.
+----------------------------------------
+Q: Explain the concept of polymorphism.
+OUTPUT:
+Q: Explain the concept of polymorphism.
+A:  Polymorphism allows objects to behave differently at runtime without modifying source code, e.g., overloading functions or implementing interfaces.
+----------------------------------------
+
+============================================================
+VALIDATION OUTPUTS
+============================================================
+
+Q: How does ERC-721 differ from ERC-1155?
+A: ERC-721 is for non-fungible tokens, like collectibles. ERC-1155 is for fungible tokens, like currencies.
+----------------------------------------
+Q: What is a merge conflict, and how do you resolve it in Git?
+A: A merge conflict occurs when two branches have incompatible changes to the same file. Resolve conflicts by resolving the differences manually or using tools like git merge --abort or git rebase.
+----------------------------------------
+Q: What is Confidential Computing?
+A: It isolates data and applications from the underlying infrastructure, preventing data exfiltration or tampering.
+----------------------------------------
+Q: What is Hierarchical Clustering?
+A: Hierarchical clustering starts with single-linkage clustering and iteratively merges clusters into larger groups until all data points are in a single cluster.
+----------------------------------------
+Q: Describe the function of a Comparator.
+A: Comparators are used to order elements in collections by comparing them using a specific rule.
+----------------------------------------
+
+============================================================
+AUTOMATIC METRICS
+============================================================
+
+BLEU-4: 0.1339
+ROUGE-L: 0.3343
+BERTScore F1: 0.9126
