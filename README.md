@@ -16,8 +16,6 @@ A comprehensive study on fine-tuning Large Language Models (LLMs) for technical 
 - [Results](#results)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Repository Structure](#repository-structure)
-- [Citation](#citation)
 
 ## 🎯 Overview
 
