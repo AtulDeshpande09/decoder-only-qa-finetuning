@@ -64,7 +64,7 @@ Final Dataset (2,306 samples)
 | Medium | 900 | 100 | 1,000 |
 | Large | 2,075 | 231 | 2,306 |
 
-## 🤖 Models
+## Models
 
 We evaluated four transformer architectures:
 
@@ -75,7 +75,7 @@ We evaluated four transformer architectures:
 | **LLaMA-2 7B** | 7B | RLHF optimized for dialogue |
 | **Mistral 7B** | 7B | Grouped-query + sliding window attention |
 
-## 🔧 Methodology
+## Methodology
 
 ### LoRA Configuration
 
@@ -147,7 +147,7 @@ LoraConfig(
 
 ![Metrics Comparison](metrics_comparison.png)
 
-## 💻 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -244,74 +244,9 @@ print(f"Q: {question}")
 print(f"A: {answer}")
 ```
 
-## 📁 Repository Structure
-
-```
-.
-├── data/
-│   ├── raw/                    # Raw dataset files
-│   ├── processed/              # Preprocessed datasets
-│   └── splits/                 # Train/test splits
-├── models/
-│   ├── gpt2-finetuned/         # Fine-tuned GPT-2
-│   ├── phi2-finetuned/         # Fine-tuned Phi-2
-│   ├── llama2-finetuned/       # Fine-tuned LLaMA-2
-│   └── mistral-finetuned/      # Fine-tuned Mistral
-├── src/
-│   ├── preprocessing.py        # Data preprocessing scripts
-│   ├── training.py             # Fine-tuning scripts
-│   ├── evaluation.py           # Evaluation scripts
-│   └── inference.py            # Inference scripts
-├── notebooks/
-│   ├── data_exploration.ipynb
-│   ├── training_analysis.ipynb
-│   └── results_visualization.ipynb
-├── paper/
-│   ├── main.tex                # LaTeX source
-│   ├── main.pdf                # Compiled PDF
-│   ├── loss_curve.pdf          # Figure 1
-│   └── metrics_comparison.pdf  # Figure 2
-├── experiments/
-│   ├── gpt2_experiment.log
-│   ├── phi2_experiment.log
-│   ├── llama2_experiment.log
-│   └── mistral_experiment.log
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
-## 📝 Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@inproceedings{author2024finetuning,
-  title={Fine-Tuning Transformer Models for Technical Interview Question Answering: A Comparative Study},
-  author={Author Name},
-  booktitle={IEEE Conference on ...},
-  year={2024},
-  organization={IEEE}
-}
-```
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Hugging Face](https://huggingface.co/) for the Transformers library
-- [Microsoft](https://github.com/microsoft) for Phi-2 model
-- [Mistral AI](https://mistral.ai/) for Mistral 7B model
-- [Meta AI](https://ai.meta.com/) for LLaMA-2 model
-- [OpenAI](https://openai.com/) for GPT-2 model
-
-## 📧 Contact
-
-For questions or feedback, please open an issue or contact:
-- Email: your.email@university.edu
-- GitHub: [@yourusername](https://github.com/yourusername)
 
 ---
 
