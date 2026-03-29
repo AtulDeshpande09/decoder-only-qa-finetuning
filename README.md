@@ -1,11 +1,12 @@
 # Fine-Tuning Transformer Models for Technical Interview Question Answering
 
-[![Paper](https://img.shields.io/badge/Paper-IEEE-blue)](main.pdf)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19310784.svg)](https://doi.org/10.5281/zenodo.19310784)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 
-A comprehensive study on fine-tuning Large Language Models (LLMs) for technical interview question answering across core Computer Science domains.
+A comprehensive study on fine-tuning Large Language Models (LLMs) for technical interview question answering across core Computer Science domains.\
+**Paper:** [Link 📝](https://zenodo.org/records/19209658)<br>
 
 ## 📋 Table of Contents
 
