@@ -6,8 +6,9 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 
 A comprehensive study on fine-tuning Large Language Models (LLMs) for technical interview question answering across core Computer Science domains.\
-**Paper:** [Link 📝](https://zenodo.org/records/19209658)<br>
+**Paper:** [Link 📝](https://doi.org/10.5281/zenodo.19310784)<br>
 
+https://doi.org/10.5281/zenodo.19310784
 ## 📋 Table of Contents
 
 - [Overview](#overview)
